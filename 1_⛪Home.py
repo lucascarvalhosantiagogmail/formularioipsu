@@ -18,8 +18,6 @@ st.set_page_config(
     page_title="Conselho IPSU",
     #page_icon= "https://img1.wsimg.com/isteam/ip/0cdba6f5-2fc0-4aaf-b030-d8df637187a2/blob-46e0c21.png/:/rs=w:134,h:100,cg:true,m/cr=w:134,h:100/qt=q:100/ll",
     layout="wide")
-st.markdown("Esta página é para visualização das informações oriundas do Formulário - Visão 2025 - IPSU"
-            "Serão apresentadas de modo gráfico, para que se tenha uma melhor avaliação das métricas")
 # Atualização da página a cada 5 minutos. Não permitir a hibernação.
 keep_alive_script = """
 <script>
@@ -119,9 +117,12 @@ else:
     #st.logo("https://img1.wsimg.com/isteam/ip/0cdba6f5-2fc0-4aaf-b030-d8df637187a2/blob-46e0c21.png/:/rs=w:134,h:100,cg:true,m/cr=w:134,h:100/qt=q:100/ll")
     st.title("CONSELHO IPSU")
     st.header("Seja bem-vindo!")
+    st.divider()
+    st.subheader("Esta página é para visualização das informações oriundas do Formulário - Visão 2025 - IPSU")
+    st.subheader("Serão apresentadas de modo gráfico, para que se tenha uma melhor avaliação das métricas")
+    st.divider()
     st.subheader("Para acesso as informações, informe a senha.")
     st.divider()
-
     # Formulário de Login
     st.subheader("Senha de acesso:")
     #login_input = st.text_input("E-mail")
